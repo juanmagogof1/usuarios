@@ -1,3 +1,10 @@
+<?php 
+
+  if(isset($_GET['loggout'])){
+    echo "Sesión cerrada...";
+  }
+
+ ?>
 <!DOCTYPE html>
 <html>
 <head>

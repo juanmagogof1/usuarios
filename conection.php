@@ -2,7 +2,8 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "dblogin";
+//$database = "dblogin";
+$database = "login";
 
 // Crear una conexión a la base de datos
 $mysqli = new mysqli($servername, $username, $password, $database);

@@ -448,22 +448,6 @@ ALTER TABLE `catusertypes`
 ALTER TABLE `sessions`
   MODIFY `sessionId` int NOT NULL AUTO_INCREMENT;
 
---
--- Restricciones para tablas volcadas
---
-
---
--- Filtros para la tabla `catusers`
---
-ALTER TABLE `catusers`
-  ADD CONSTRAINT `catusers_ibfk_1` FOREIGN KEY (`fk_personId`) REFERENCES `catpersons` (`personId`),
-  ADD CONSTRAINT `catusers_ibfk_2` FOREIGN KEY (`fk_UserTypeId`) REFERENCES `catusertypes` (`userTypeId`);
-
---
--- Filtros para la tabla `sessions`
---
-ALTER TABLE `sessions`
-  ADD CONSTRAINT `sessions_ibfk_1` FOREIGN KEY (`fk_userId`) REFERENCES `catusers` (`userId`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
